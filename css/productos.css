@@ -1,24 +1,6 @@
 body{
 background-color: #fddeae;
 }
-.c1{
-    
-    margin-left: 20PX;
-    background-color: #fdfdfd;
-    width: 90vw;
-    height: 150px;
-    position: sticky;
-    top: 20px;
-    border-radius: 50px;
-}
-.float{
-    width: 80vw;
-    height: 180vh;
-    margin: auto;
-    margin-top: 20px;
-    border: 1px solid #1ce99a;
-}
-<<<<<<< Updated upstream
 .flex{
     width: 94vw;
     height: 80vh;
@@ -27,8 +9,42 @@ background-color: #fddeae;
     border: 1px solid #5c3a08;
     display: flex;
     gap: 15px;
-=======
+}
 
+.menu {
+    width: 90vw;
+    height: 100px;
+
+    margin: 20px auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    gap: 10px;
+
+    background-color: #fdfdfd;
+
+    border-radius: 100px;
+
+    position: sticky;
+    top: 20px;
+
+    z-index: 100;
+}
+
+/* =========================
+   CADA UNA DE LAS 4 CASILLAS
+   ========================= */
+
+.menu-item {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0 px;
+}
 
 /* =========================
    ENLACES
@@ -95,7 +111,6 @@ background-color: #fddeae;
     border: 1px solid #5c3a08;
     display: flex;
     gap: 50px;
->>>>>>> Stashed changes
     flex-direction: row;
     flex-wrap: wrap;
 }
