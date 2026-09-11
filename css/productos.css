@@ -7,7 +7,7 @@ background-color: #fddeae;
     margin: 20px auto;
     border: 1px solid #5c3a08;
     display: flex;
-    gap: 40px;
+    gap: 30px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -15,18 +15,25 @@ background-color: #fddeae;
 }
 .grid{
     width: 94vw;
-    height: 300vh;
+    height: 500vh;
     margin: auto;
     margin-top: 20PX;
     border: 1px solid #000000;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     row-gap: 15px;
     grid-template-areas: "h h h h"
     "s s s s"
     "s s s s"
     "s s s s"
+    "s s s s"
+    "s s s s"
+    "s s s s"
+    "s s s s"
+    "s s s s"
+    "s s s s"
+    "s s s s" 
     "f f f f";
 }
 
@@ -109,8 +116,13 @@ footer{
     gap: 20px;
 }
 .imagen_estandar {
-  width: 280px;
-  height: 180px;
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+}
+.imagen_estandar_Vertical {
+  width: 180px;
+  height: 280px;
   object-fit: cover;
 }
 .texto{
@@ -123,6 +135,19 @@ footer{
 }
 
 /*
+----Organizacion roductos----
+*/
+
+.MenuProd {
+    display: flex;
+    gap: 60px;
+    overflow-x: auto;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+/*
 ------LOGO-------
 */
 .logo {
@@ -132,5 +157,5 @@ footer{
     width: 100px;
     height: 100px;
 
-    object-fit: contain;
+    object-fit: cover;
 }
