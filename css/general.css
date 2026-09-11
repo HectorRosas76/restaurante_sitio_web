@@ -8,31 +8,21 @@ body {
 .menu {
     width: 90vw;
     height: 100px;
-
     margin: 20px auto;
-
     display: grid;
-
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
     gap: 10px;
-
     background-color: #fdfdfd;
-
     border-radius: 100px;
-
     position: sticky;
     top: 20px;
-
     z-index: 100;
 }
 
 .menu-item {
     display: flex;
-
     justify-content: center;
     align-items: center;
-
     border-radius: 0 px;
 }
 
@@ -43,14 +33,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: rgb(229, 220, 135);
-
     text-decoration: none;
-
     font-family: Impact, 'Arial Black', sans-serif;
-
     font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.menu-item:not(.logo) a:hover {
+    transform: scale(1.5);
 }
 
 /* LOGO */
@@ -64,30 +55,20 @@ body {
     object-fit: contain;
 }
 
-
 /*Pie de pagina*/
-
 .foot1 {
     /*contiene grid*/
     width: 100%;
     height: 100%;
-
     justify-content: center;
     align-items: center;
-
     bottom: 0;
     left: 0;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 10px;
-
     background-color: #ffffff;
-
     z-index: 1000;
 }
 

@@ -1,21 +1,40 @@
-
 /*CONTENEDOR DE LA PAGINA*/
 .pagina {
     width: 96%;
     margin: 20px auto;
-
     display: flex;
     align-items: flex-start;
-
     gap: 20px;
 }
 
+.flex1{
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+p{
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+h3 h2 h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+
 /* VIDEOS LATERALES*/
-
 .video-lateral {
-    width: 200px;
+    width: 150px;
     flex-shrink: 0;
-
     position: sticky;
     top: 140px;
 }
@@ -23,39 +42,28 @@
 .video-lateral video {
     width: 100%;
     height: 500px;
-
     object-fit: cover;
-
     border-radius: 20px;
 }
 
-
 /* VERSION PARA CELULAR*/
-
 @media (max-width: 768px) {
-
     .pagina {
         width: 94%;
-
         display: flex;
         flex-direction: column;
-
         gap: 15px;
     }
 
     .video-lateral {
         width: 100%;
-
         position: static;
     }
 
     .video-lateral video {
         width: 100%;
         height: 180px;
-
         object-fit: cover;
-
         border-radius: 20px;
     }
-
 }
