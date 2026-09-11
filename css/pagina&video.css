@@ -7,6 +7,30 @@
     gap: 20px;
 }
 
+.flex1{
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+p{
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+h3 h2 h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+
 /* VIDEOS LATERALES*/
 .video-lateral {
     width: 150px;

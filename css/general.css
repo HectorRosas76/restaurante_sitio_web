@@ -41,9 +41,7 @@ body {
 }
 
 .menu-item:not(.logo) a:hover {
-  
     transform: scale(1.5);
-
 }
 
 /* LOGO */
