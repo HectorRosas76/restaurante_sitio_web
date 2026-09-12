@@ -10,7 +10,7 @@ body {
     height: 100px;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     background-color: #fdfdfd;
     border-radius: 100px;
@@ -33,12 +33,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(229, 220, 135);
+    color: #f38723;
     text-decoration: none;
     font-family: Impact, 'Arial Black', sans-serif;
     font-size: 18px;
     transition: transform 0.3s;
 }
+
+#acti1:active {
+    color: #0a06f5;
+    font-weight: normal;
+}
+
 
 .menu-item:not(.logo) a:hover {
     transform: scale(1.5);
