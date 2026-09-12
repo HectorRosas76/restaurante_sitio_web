@@ -40,6 +40,12 @@ body {
     transition: transform 0.3s;
 }
 
+#acti1:active {
+    color: #0a06f5;
+    font-weight: normal;
+}
+
+
 .menu-item:not(.logo) a:hover {
     transform: scale(1.5);
 }
