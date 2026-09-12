@@ -7,7 +7,7 @@
     gap: 20px;
 }
 
-.flex1{
+.flex1 {
     width: auto;
     height: auto;
     margin: 20px auto;
@@ -19,14 +19,14 @@
     justify-content: center;
 }
 
-p{
+p {
     font-family: 'Arial', sans-serif;
     line-height: 1.5;
     text-align: justify;
 }
 
-h3 h2 h1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+h3 h2 h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 
