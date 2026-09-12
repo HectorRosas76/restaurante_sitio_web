@@ -1,96 +1,191 @@
-/* CONTENEDOR DE PRODUCTOS*/
-.flex {
-    width: 94vw;
-    min-height: 80vh;
-    margin: 20px auto;
-    border: 1px solid #5c3a08;
-    display: flex;
-    gap: 15px;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
-.flex {
+.flex{
     width: auto;
     height: auto;
     margin: 20px auto;
-    border: 1px solid #5c3a08;
     display: flex;
-    gap: 40px;
+    gap: 30px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
 }
-
-.grid {
+.grid{
     width: 94vw;
-    height: 300vh;
+    height: 370vh;
     margin: auto;
     margin-top: 20PX;
-    border: 1px solid #000000;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 15px;
-    grid-template-areas: "h h h h"
-        "s s s s"
-        "s s s s"
-        "s s s s"
-        "f f f f";
+    grid-template-areas: "s s s s"
+    "s s s s"
+    "s s s s"
+    "s s s s"
+    "s s s s";
 }
 
-header {
-    width: 100%;
-    height: 100%;
-    background-color: #f59fa6;
+header{
     grid-area: h;
 }
-
-section {
+section{
     width: 100%;
     height: 100%;
     background-color: #facf59;
     grid-area: s;
 }
-
-nav {
-    width: 100%;
-    height: 100%;
-    background-color: #2bff00;
+nav{
     grid-area: n;
 }
-
-footer {
-    width: 100%;
-    height: 100%;
-    background-color: #ff0000;
+footer{
     grid-area: f;
 }
 
 /*
-------ESTANDAR IMAGENES DE PRODUCTOS-------
+------ESTANDAR IMAGENES DE PRODUCTOS Y ANIMACIONES-------
 */
-.Productos {
+.MenuProd1 {
+    background-color: #fff1a4;
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    overflow: hidden;
+}
+.Productos1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    animation: mover1 21s linear infinite alternate;
+}
+@keyframes mover1 {
+    from {
+        transform: translateX(50%);
+    }
+
+    to {
+        transform: translateX(-1800px);
+    }
+}
+.MenuProd2 {
+    background-color: #fff1a4;
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    overflow: hidden;
+
+}
+.Productos2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    animation: mover2 8s linear infinite alternate;
+}
+@keyframes mover2 {
+    from {
+        transform: translateX(50%);
+    }
+
+    to {
+        transform: translateX(-600px);
+    }
 }
 
+.MenuProd3 {
+    background-color: #fff1a4;
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+    gap: 40px;
+    width: max-content;    
+    overflow: hidden;
+}
+.Productos3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    animation: mover3 17s linear infinite alternate;
+}
+@keyframes mover3 {
+    from {
+        transform: translateX(50%);
+    }
+
+    to {
+        transform: translateX(-1300px);
+    }
+}
+
+.MenuProd4 {
+    background-color: #fff1a4;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    overflow: hidden;
+
+}
+.Productos4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    animation: mover4 10s linear infinite alternate;
+}
+@keyframes mover4 {
+    from {
+        transform: translateX(50%);
+    }
+
+    to {
+        transform: translateX(-700px);
+    }
+}
 .imagen_estandar {
-    width: 280px;
-    height: 180px;
-    object-fit: cover;
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
 }
-
-.texto {
+.imagen_estandar_Vertical {
+  width: 180px;
+  height: 280px;
+  object-fit: cover;
+}
+.texto{
     background-color: #e64b58;
     border-radius: 30px;
     padding: 20px 40px;
 }
-
 .texto h1 {
+    margin: 0;
+}
+
+.texto1{
+    background-color: #ffa7a7;
+    padding: 50px 40px;
+}
+.texto1 h1 {
+    text-align: center;
     margin: 0;
 }
