@@ -1,6 +1,6 @@
 /*general*/
 body {
-    background-color: #fddeae;
+    background-color: #361004;
     margin: 0;
 }
 
@@ -10,7 +10,7 @@ body {
     height: 100px;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     background-color: #fdfdfd;
     border-radius: 100px;
@@ -39,6 +39,12 @@ body {
     font-size: 18px;
     transition: transform 0.3s;
 }
+
+#acti1:active {
+    color: #0a06f5;
+    font-weight: normal;
+}
+
 
 .menu-item:not(.logo) a:hover {
     transform: scale(1.5);
@@ -80,4 +86,14 @@ body {
     align-items: center;
 
     border-radius: 0 px;
+}
+.texto2 {
+    display: flex;
+    background-color: #fff1a4;
+    border-radius: 30px;
+    padding: 20px 40px;
+}
+.texto2 h2 {
+    text-align: center;
+    margin: 0;
 }
