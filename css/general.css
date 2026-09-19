@@ -94,6 +94,7 @@ h1::after {
 
     margin: 8px auto 0;
 }
+
 .foot1::before {
     content: "";
     display: block;
@@ -181,12 +182,14 @@ h1 {
 
     border-radius: 0 px;
 }
+
 .texto2 {
     display: flex;
     background-color: #fff1a4;
     border-radius: 30px;
     padding: 20px 40px;
 }
+
 .texto2 h2 {
     text-align: center;
     margin: 0;
