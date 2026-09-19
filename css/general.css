@@ -66,11 +66,73 @@ body {
     object-fit: contain;
 }
 
-/*imagen logo*/
-#peque {
+/* Detalle decorativo debajo de los enlaces del menú */
+.menu-item:not(.logo) a::after {
+    content: "";
+    position: absolute;
+    bottom: 22px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #f38723;
+    transition: width 0.3s ease;
+}
+
+.menu-item:not(.logo) a:hover::after {
+    width: 35%;
+}
+
+/* PSEUDOELEMENTO 2: linea decorativa bajo los titulos */
+h1::after {
+    content: "";
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    background-color: #f38723;
+    border-radius: 5px;
+
+    margin: 8px auto 0;
+}
+
+/* PSEUDOELEMENTO 3: detalle superior del footer */
+.foot1::before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 3px;
+    background-color: #f38723;
+    border-radius: 5px;
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+/* CONTACTOS: pagina pedidos */
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    margin: 8px 0;
+}
+
+.contacto-item img {
     width: 30px;
     height: 30px;
+
+    object-fit: contain;
+    flex-shrink: 0;
 }
+
+.contacto-item p {
+    margin: 0;
+    text-align: left;
+}
+
 
 
 
