@@ -12,7 +12,7 @@
 
 .grid {
     width: 94vw;
-    height: 370vh;
+    height: auto;
     margin: auto;
     margin-top: 20PX;
     display: grid;
@@ -29,7 +29,6 @@
 section {
     width: 100%;
     height: 100%;
-    background-color: #facf59;
     grid-area: s;
 }
 
@@ -95,10 +94,9 @@ section {
     }
 
     to {
-        transform: translateX(-600px);
+        transform: translateX(-750px);
     }
 }
-
 .MenuProd3 {
     background-color: #fff1a4;
     margin: auto;
@@ -150,7 +148,7 @@ section {
     align-items: center;
     gap: 20px;
 
-    animation: mover4 10s linear infinite alternate;
+    animation: mover4 8s linear infinite alternate;
 }
 
 @keyframes mover4 {
@@ -159,7 +157,7 @@ section {
     }
 
     to {
-        transform: translateX(-700px);
+        transform: translateX(-600px);
     }
 }
 
@@ -167,6 +165,8 @@ section {
     width: 320px;
     height: 220px;
     object-fit: cover;
+    align-items: center;
+
 }
 
 .imagen_estandar_Vertical {
@@ -182,11 +182,13 @@ section {
 }
 
 .texto h1 {
+    text-align: center;
     margin: 0;
 }
 
 .texto1 {
-    background-color: #ffa7a7;
+    background-color: #f5f5f5;
+    border-radius: 30px;
     padding: 50px 40px;
 }
 
