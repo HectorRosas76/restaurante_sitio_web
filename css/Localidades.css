@@ -1,0 +1,39 @@
+.lista-localidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.lista-localidades > .localidad {
+    background-color: #e64b58;
+    width: 220px;
+    min-height: 180px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.localidades h2 {
+    background-color: #d4671e;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.localidad h3 ~ p {
+    background-color: #e09407;
+    text-align: center;
+    border-radius: 10px;
+}
+.localidad h3 + p {
+    height: auto;
+    width: auto;
+    background-color: #e9c832;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.localidad:hover {
+    transform: scale(1.07);
+}
