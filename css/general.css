@@ -1,7 +1,7 @@
 /*general*/
 body {
     /* contiene flex */
-    background-color: #fddeae;
+    background-color: #361004;
     margin: 0;
     min-height: 100vh;
     display: flex;
@@ -41,7 +41,7 @@ body {
     color: #f38723;
     text-decoration: none;
     font-family: Impact, 'Arial Black', sans-serif;
-    font-size: 18px;
+    font-size: clamp(18px, 1.8vw, 100px);
     transition: transform 0.3s;
 }
 
@@ -66,31 +66,54 @@ body {
     object-fit: contain;
 }
 
+
+
+/*texto*/
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(14px, 2vw, 22px);
+    line-height: 1.5;
+    text-align: justify;
+    color: white;
+}
+
+h3,  h2,  h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
 /*Pie de pagina*/
 .foot1 {
     /*contiene grid*/
     width: 100%;
     min-height: 100%;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-
     justify-content: center;
     align-items: center;
-
     background-color: #ffffff;
-
     margin-top: auto;
-
 }
 
 .foot1-item {
     /*flex*/
     display: flex;
-
     justify-content: center;
     align-items: center;
 
     border-radius: 0 px;
+}
+
+
+.texto2 {
+    display: flex;
+    background-color: #fff1a4;
+    border-radius: 30px;
+    padding: 20px 40px;
+}
+.texto2 h2 {
+    text-align: center;
+    margin: 0;
+    color: #361004;
 }
