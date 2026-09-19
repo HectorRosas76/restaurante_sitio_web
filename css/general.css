@@ -66,6 +66,12 @@ body {
     object-fit: contain;
 }
 
+/*imagen logo*/
+#peque {
+    width: 30px;
+    height: 30px;
+}
+
 
 
 /*texto*/
@@ -81,13 +87,15 @@ p {
     color: black
 }
 
-h3,  h2,  h1 {
+h3,
+h2,
+h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
 
-#h2a{
-        color: #361004;
+#h2a {
+    color: #361004;
 
 }
 
@@ -117,12 +125,14 @@ h3,  h2,  h1 {
 
     border-radius: 0 px;
 }
+
 .texto2 {
     display: flex;
     background-color: #fff1a4;
     border-radius: 30px;
     padding: 20px 40px;
 }
+
 .texto2 h2 {
     text-align: center;
     margin: 0;
