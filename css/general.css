@@ -1,7 +1,12 @@
 /*general*/
 body {
-    background-color: #fddeae;
+    /* contiene flex */
+    background-color: #361004;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
 }
 
 /* MENU PRINCIPAL //contiene Grid y flex */
@@ -36,7 +41,7 @@ body {
     color: #f38723;
     text-decoration: none;
     font-family: Impact, 'Arial Black', sans-serif;
-    font-size: 18px;
+    font-size: clamp(18px, 1.8vw, 100px);
     transition: transform 0.3s;
 }
 
@@ -59,6 +64,101 @@ body {
     width: 100px;
     height: 100px;
     object-fit: contain;
+}
+
+/* Detalle decorativo debajo de los enlaces del menú */
+.menu-item:not(.logo) a::after {
+    content: "";
+    position: absolute;
+    bottom: 22px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #f38723;
+    transition: width 0.3s ease;
+}
+
+.menu-item:not(.logo) a:hover::after {
+    width: 35%;
+}
+
+/* PSEUDOELEMENTO 2: linea decorativa bajo los titulos */
+h1::after {
+    content: "";
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    background-color: #f38723;
+    border-radius: 5px;
+
+    margin: 8px auto 0;
+}
+
+/* PSEUDOELEMENTO 3: detalle superior del footer */
+.foot1::before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 3px;
+    background-color: #f38723;
+    border-radius: 5px;
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+/* CONTACTOS: pagina pedidos */
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    margin: 8px 0;
+}
+
+.contacto-item img {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.contacto-item p {
+    margin: 0;
+    text-align: left;
+}
+
+
+
+
+/*texto*/
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(14px, 2vw, 22px);
+    line-height: 1.5;
+    text-align: justify;
+    color: white;
+}
+
+#par {
+    color: black
+}
+
+h3,
+h2,
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+#h2a {
+    color: #361004;
+
 }
 
 /*Pie de pagina*/
@@ -86,4 +186,16 @@ body {
     align-items: center;
 
     border-radius: 0 px;
+}
+
+.texto2 {
+    display: flex;
+    background-color: #fff1a4;
+    border-radius: 30px;
+    padding: 20px 40px;
+}
+
+.texto2 h2 {
+    text-align: center;
+    margin: 0;
 }
